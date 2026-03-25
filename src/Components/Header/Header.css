@@ -1,0 +1,167 @@
+nav.header {
+    transition: all .3s;
+}
+
+.header .cont .right .menu {
+    display: none;
+}
+
+.header .cont .right ul.main {
+    width: 750px;
+}
+
+/* .header .cont .right ul.main .more:active .mobile-ul {
+    display: flex !important;
+    } */
+.header .cont .right .mobile-ul {
+    transform: translateX(665px);
+}
+
+@media (min-width: 1465px) {
+    .header .cont .right ul.main {
+        margin-right: 80px;
+    }
+
+    /* .header .cont .right ul.main .mobile-ul{
+            transform: translateX(515px);
+            } */
+}
+
+@media (max-width: 1380px) {
+    .header .cont .right ul.main {
+        width: 600px;
+    }
+
+    .header .cont .right .mobile-ul {
+        transform: translateX(515px);
+    }
+}
+
+@media (max-width: 1230px) {
+    .header .cont .right ul.main {
+        width: 500px;
+    }
+    .header .cont .right .mobile-ul {
+        transform: translateX(415px);
+    }
+}
+
+@media (max-width: 1132px) {
+    .header .cont .right ul.main {
+        width: 400px;
+    }
+    .header .cont .right .mobile-ul {
+        transform: translateX(325px);
+    }
+}
+
+@media (max-width: 1010px) {
+    .header .cont .right ul.main {
+        width: 400px;
+    }
+}
+
+@media (max-width: 1010px) {
+    .header .cont .right ul.main {
+        width: 400px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .header .cont .right .menu {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .header .cont .right ul.main {
+        position: absolute;
+        right: 0;
+        top: 0;
+        flex-direction: column;
+        transform: translate(10px, 53px);
+        background-color: var(--bg-secound);
+        width: 260px;
+        gap: 20px;
+        padding: 20px;
+        border: .5px solid rgb(120 130 147 / 0.5);
+        display: none; /* هذا السطر يخليها مخفية في البداية */
+    }
+    
+    /* هذا السطر يخليها تظهر لما نضيف كلاس mobile-active */
+    .header .cont .right ul.main.mobile-active {
+        display: flex;
+    }
+}
+
+@media (max-width: 764px) {
+    .header .cont .right button {
+        display: none;
+    }
+    .header .cont .right ul.main {
+        transform: translate(15px, 53px);
+        background-color: var(--bg-secound);
+        width: 260px;
+        gap: 20px;
+        padding: 20px;
+        border: .5px solid rgb(120 130 147 / 0.5);
+        display: none;
+    }
+    
+    .header .cont .right ul.main.mobile-active {
+        display: flex;
+    }
+}
+/* .mobile-ul.show {
+    display: flex !important;
+} */
+/* Add position relative to the dropdown container */
+.pages-dropdown-container {
+  position: relative;
+  list-style: none;
+}
+
+/* Ensure the dropdown stays open when hovering over it */
+.mobile-ul {
+  /* Your existing styles */
+  transition: all 0.2s ease;
+}
+
+/* Optional: Add a small delay to prevent accidental closing */
+.pages-dropdown-container {
+  position: relative;
+}
+
+/* Make sure the dropdown is clickable */
+.mobile-ul.show {
+  display: flex !important;
+  pointer-events: auto;
+}
+@media (max-width: 1100px) {
+    /* تعديل الـ dropdown عشان يظهر داخل القائمة الموبايل */
+    .header .cont .right ul.main .mobile-ul {
+        position: relative !important;
+        top: -80px !important;
+        transform: none !important;
+        width: 100%;
+        /* margin-top: 15px; */
+        margin-top: 0;
+        left: -20px !important;
+        gap: 20px !important;
+        background: transparent;
+    }
+    
+    /* خلي الـ dropdown ياخذ عرض كامل */
+    .header .cont .right ul.main .more {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    /* تأكد أن الـ dropdown يظهر ويختفي صح */
+    .header .cont .right ul.main .mobile-ul.hidden {
+        display: none !important;
+    }
+    
+    .header .cont .right ul.main .mobile-ul.show {
+        display: flex !important;
+    }
+}

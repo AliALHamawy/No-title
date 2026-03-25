@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* :root {
+    --bg-main: #fff;
+    --bg-secound: #fff;
+    --color-main: rgb(74 108 247);
+    --textcolor-main: rgb(18 23 35);
+    --textcolor-secound: rgb(120 130 147);
+    --input-bg: #f8f8f8;
+    --card-bg: rgb(255 255 255);
+    --shadow: 0px 5px 10px var(--tw-shadow-color);
+}
+
+.dark {
+    --bg-main: rgb(30 35 46);
+    --bg-secound: rgb(18 23 35);
+    --color-main: rgb(74 108 247);
+    --textcolor-main: rgb(255 255 255);
+    --textcolor-secound: rgb(149 156 177);
+    --input-bg: rgb(44 48 59);
+    --card-bg: rgb(29 36 48);
+    --shadow: 0px 5px 10px var(--tw-shadow-color);
+} */
+:root {
+    --bg-secound: rgb(30 35 46);
+    --bg-main: rgb(18 23 35);
+    --hbg-main: rgba(30, 35, 46, 0);
+    --color-main: rgb(74 108 247);
+    --hcolor-main:rgb(66, 104, 253);
+    --textcolor-main: rgb(255 255 255);
+    --textcolor-secound: rgb(149 156 177);
+    --input-bg: rgb(44 48 59);
+    --card-bg: rgb(29 36 48);
+    --shadow: 0px 5px 10pxrgb(29 36 48);
+}
