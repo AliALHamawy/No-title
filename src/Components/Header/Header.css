@@ -136,6 +136,7 @@ nav.header {
   display: flex !important;
   pointer-events: auto;
 }
+
 @media (max-width: 1100px) {
     /* تعديل الـ dropdown عشان يظهر داخل القائمة الموبايل */
     .header .cont .right ul.main .mobile-ul {
