@@ -1,0 +1,10 @@
+.hero .aaa {
+    position: absolute;
+    right: 0;
+    top: -9px;
+}
+.hero .bbb {
+    position: absolute;
+    left: 0;
+    top: 550px;
+}

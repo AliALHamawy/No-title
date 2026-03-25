@@ -1,5 +1,7 @@
 nav.header {
     transition: all .3s;
+    z-index: 9999999999999999999999999999999;
+    border-bottom: 1px solid var(--border);
 }
 
 .header .cont .right .menu {
@@ -27,6 +29,9 @@ nav.header {
             } */
 }
 
+.header .cont .right .mobile-ul {
+        border: .5px solid var(--border);
+}
 @media (max-width: 1380px) {
     .header .cont .right ul.main {
         width: 600px;
@@ -83,13 +88,16 @@ nav.header {
         width: 260px;
         gap: 20px;
         padding: 20px;
-        border: .5px solid rgb(120 130 147 / 0.5);
+        border: .5px solid transparent;
         display: none; /* هذا السطر يخليها مخفية في البداية */
     }
     
     /* هذا السطر يخليها تظهر لما نضيف كلاس mobile-active */
     .header .cont .right ul.main.mobile-active {
         display: flex;
+    }
+    .header .cont .right ul.mobile-ul{
+        border: .5px solid transparent;
     }
 }
 
