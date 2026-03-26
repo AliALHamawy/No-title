@@ -3,7 +3,7 @@ import './Hero.css'
 function Hero() {
   return (
     <>
-      <div className="hero bg-(--bg-main) h-[751px] pt-[95.97px]">
+      <div className="hero bg-(--bg-secound) h-[751px] pt-[95.97px]">
         <img src="/assets/images/hero/shape-01.svg" alt="" className='aaa' />
         <img src="/assets/images/hero/shape-02.svg" alt="" className='bbb' />
         <div className="cont w-[350px] sm:w-[540px] md:w-[800px] lg:w-[800px] flex flex-col text-center m-auto mt-30  absolute left-[50%] -translate-x-[50%]">

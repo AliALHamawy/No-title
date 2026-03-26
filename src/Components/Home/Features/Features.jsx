@@ -5,7 +5,7 @@ import Info from './FeaturesInfo.jsx'
 function Features() {
   const [feature, setFeature] = useState(Info)
   return (
-    <div className="features pt-[95.97px] bg-(--bg-secound)">
+    <div className="features pt-[95.97px] bg-(--bg-main) mb-10">
       <div className="cont flex text-center flex-col m-auto">
         <div className='max-w-[570px] m-auto'>
           <h1 className='text-(--textcolor-main) text-3xl sm:text-5xl bd:text-5xl lg:text-5xl font-bold mb-7 leading-10 sm:leading-16 md:leading-16 lg:leading-16'>Main Features</h1>

@@ -25,7 +25,7 @@
 :root {
     --bg-secound: rgb(30 35 46);
     --bg-main: rgb(18 23 35);
-    --hbg-main: rgba(30, 35, 46, 0.979);
+    --hbg-main: rgba(30, 35, 46, 0.479);
     --border: #5e5f619a;
     --color-main: rgb(74 108 247);
     --hcolor-main:rgb(66, 104, 253);
@@ -39,4 +39,5 @@
 }
 body {
     font-family: "Iosevka Charon", monospace;
+    background-color: var(--bg-main);
 }
