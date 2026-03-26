@@ -23,7 +23,7 @@
     --shadow: 0px 5px 10px var(--tw-shadow-color);
 } */
 :root {
-    --bg-secound: rgb(30 35 46);
+    --bg-secound: rgb(23 28 40);
     --bg-main: rgb(18 23 35);
     --hbg-main: rgba(30, 35, 46, 0.479);
     --border: #5e5f619a;
@@ -33,9 +33,10 @@
     --textcolor-secound: rgb(149 156 177);
     --input-bg: rgb(44 48 59);
     --card-bg: rgb(29 36 48);
-    --shadow: 0px 5px 10pxrgb(29 36 48);
+    --shadow: 0px 2px 6px rgb(38, 40, 43);
     --heroBtn-bg: rgb(53 57 67);
     --heroBtn-hbg: rgb(40, 42, 46);
+    --input-bg: rgb(44 48 59);
 }
 body {
     font-family: "Iosevka Charon", monospace;

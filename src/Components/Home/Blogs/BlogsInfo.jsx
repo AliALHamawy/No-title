@@ -1,0 +1,6 @@
+const BlogsInf = [
+    {id: 1, title: "Best UI components for modern websites.", subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.", imagePath: '/assets/images/blog/blog-01.jpg', name: "By Samuyl Joshi", jop: "Graphic Designer", btnTit: "creative", avatar: "/assets/images/blog/author-01.png"},
+    {id: 2, title: "9 simple ways to improve your design skills.", subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.", imagePath: '/assets/images/blog/blog-02.jpg', name: "By Musharof Chy", jop: "Content Writer", btnTit: "Computer", avatar: "/assets/images/blog/author-02.png"},
+    {id: 3, title: "Tips to quickly improve your coding speed.", subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.", imagePath: '/assets/images/blog/blog-03.jpg', name: "By Lethium Deo", jop: "Graphic Designer", btnTit: "Desgin", avatar: "/assets/images/blog/author-03.png"}
+]
+export default BlogsInf

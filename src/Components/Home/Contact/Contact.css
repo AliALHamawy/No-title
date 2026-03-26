@@ -1,0 +1,16 @@
+@media (min-width: 1000px) {
+    .contact {
+        flex-wrap: nowrap !important;
+    }
+}
+@media (max-width: 1000px) {
+    .contact .left .abc{
+        flex-direction: column;
+    }
+    .contact .left .abc .bcd{
+        width: 100% !important;
+    }
+    .contact .right {
+        width: 470px !important;
+    }
+}
