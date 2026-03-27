@@ -53,7 +53,7 @@ function Header() {
                 <Link onClick={() => setIsMobileMenuOpen(false)} to="/" className="px-2 active:text-(--textcolor-main)  transition duration-300 hover:text-(--textcolor-main) text-center w-[90px] flex justify-between items-center">Home</Link>
                 <Link onClick={() => setIsMobileMenuOpen(false)} to="/About" className="px-2 active:text-(--textcolor-main)  transition duration-300 hover:text-(--textcolor-main) text-center w-[90px] flex justify-between items-center">About</Link>
                 <Link onClick={() => setIsMobileMenuOpen(false)} to="/Blog" className="px-2 active:text-(--textcolor-main)  transition duration-300 hover:text-(--textcolor-main) text-center w-[90px] flex justify-between items-center">Blog</Link>
-                <Link onClick={() => setIsMobileMenuOpen(false)} to="/Contact" className="px-2 active:text-(--textcolor-main)  transition duration-300 hover:text-(--textcolor-main) text-center w-[90px] flex justify-between items-center">Support</Link>
+                <Link onClick={() => setIsMobileMenuOpen(false)} to="/Support" className="px-2 active:text-(--textcolor-main)  transition duration-300 hover:text-(--textcolor-main) text-center w-[90px] flex justify-between items-center">Support</Link>
                 <Link
                   className="px-2 active:text-(--textcolor-main)  transition duration-300 hover:text-(--textcolor-main) text-center w-[90px] flex justify-between items-center more"
                   onMouseEnter={handleMouseEnter}
@@ -68,8 +68,8 @@ function Header() {
                   onMouseLeave={handleMouseLeave}
                 >
                   <Link onClick={() => setIsMobileMenuOpen(false)} to="/About" className="px-2 text-(--textxcolor-secound)  transition duration-300 hover:text-(--textcolor-main) text-left ">About Page</Link>
-                  <Link onClick={() => setIsMobileMenuOpen(false)} to="/Contact" className="px-2 text-(--textxcolor-secound)  transition duration-300 hover:text-(--textcolor-main) text-left ">Contact Page</Link>
-                  <Link onClick={() => setIsMobileMenuOpen(false)} to="/Blogs" className="px-2 text-(--textxcolor-secound)  transition duration-300 hover:text-(--textcolor-main) text-left ">Blog Grid Page</Link>
+                  <Link onClick={() => setIsMobileMenuOpen(false)} to="/Support" className="px-2 text-(--textxcolor-secound)  transition duration-300 hover:text-(--textcolor-main) text-left ">Contact Page</Link>
+                  <Link onClick={() => setIsMobileMenuOpen(false)} to="/Blog" className="px-2 text-(--textxcolor-secound)  transition duration-300 hover:text-(--textcolor-main) text-left ">Blog Grid Page</Link>
                   <Link onClick={() => setIsMobileMenuOpen(false)} to="/BlogSidebar" className="px-2 text-(--textxcolor-secound)  transition duration-300 hover:text-(--textcolor-main) text-left ">Blog SidePar Page</Link>
                   <Link onClick={() => setIsMobileMenuOpen(false)} to="/BlogDetails" className="px-2 text-(--textxcolor-secound)  transition duration-300 hover:text-(--textcolor-main) text-left ">Blog Details Page</Link>
                   <Link onClick={() => setIsMobileMenuOpen(false)} to="/SignUp" className="px-2 text-(--textxcolor-secound)  transition duration-300 hover:text-(--textcolor-main) text-left ">Sign Up Page</Link>

@@ -7,9 +7,9 @@ function Blogs() {
   const [blog, setBlog] = useState(BlogsInf)
   return (
     <>
-      <div className="blogs">
-        <div className="cont px-4">
-          <div className="top max-w-[570px] m-auto text-center">
+      <div className="blogs bg-(--bg-secound) p-10">
+        <div className="cont px-4 my-20">
+          <div className="top max-w-[570px]  m-auto text-center">
             <h1 className='text-(--textcolor-main) text-3xl sm:text-5xl bd:text-5xl lg:text-5xl font-bold mb-7 leading-10 sm:leading-16 md:leading-16 lg:leading-16'>Our Latest Blogs</h1>
             <p className='text-xl text-(--textcolor-secound) mb-10'>There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form.</p>
           </div>

@@ -18,7 +18,7 @@ function App() {
               <><About /><ExtraFeatures /><VeryExtraFeatures /></>
             }
           />
-          <Route path='/Blogs'
+          <Route path='/Blog'
             element={
               <><Blog /><Blogs /></>
             }
