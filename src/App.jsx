@@ -1,6 +1,6 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { About, Blog, BlogDetails, Blogs, BlogSidebar, Contact, Error, ExtraFeatures, Features, FeedBack, Footer, Header, Help, Hero, Pricing, SignIn, SignUp, Support, VeryExtraFeatures } from './import'
+import { About, Blog, BlogDetails, Blogs, BlogSidebar, Contact, Error, ExtraFeatures, Features, FeedBack, Footer, Header, Help, Hero, Pricing, SectionsInfo, SignIn, SignUp, Support, VeryExtraFeatures } from './import'
 
 function App() {
   return (
@@ -10,22 +10,22 @@ function App() {
         <Routes>
           <Route path='/'
             element={
-              <><Hero /><Features /><Help /><ExtraFeatures /><VeryExtraFeatures /><FeedBack /><Pricing /><Blogs /><Contact /></>
+              <><Hero /><Features /><Help /><ExtraFeatures /><VeryExtraFeatures /><FeedBack /><Pricing /><Blogs className="bg-(--bg-secound) " abcde="flex flex-col"/><Contact /></>
             }
           />
           <Route path='/About'
             element={
-              <><About /><ExtraFeatures /><VeryExtraFeatures /></>
+              <><SectionsInfo title="About Page" link="/About" linkTitle="About Page"/><ExtraFeatures /><VeryExtraFeatures /></>
             }
           />
           <Route path='/Blog'
             element={
-              <><Blog /><Blogs /></>
+              <><SectionsInfo title="Blog Grid" link="/Blog" linkTitle="Blog Grid"/><Blogs /></>
             }
           />
           <Route path='/Support'
             element={
-              <><Support /><Contact /></>
+              <><SectionsInfo title="Contact Page" link="/Support" linkTitle="Contact Page"/><Contact /></>
             }
           />
           <Route path='/BlogSidebar'
