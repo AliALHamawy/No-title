@@ -44,7 +44,9 @@ function Header() {
         <div className="cont max-w-[1400px] m-auto flex justify-between items-center gap-14 -translate-x-3">
           <div className="left min-w-[164.47px] mr-10">
             <div className="logo">
+              <Link to="/">
               <img src="/assets/images/logo/logo.svg" alt="" />
+              </Link>
             </div>
           </div>
           <div className="right max-w-[1150px] flex justify-between gap-10">

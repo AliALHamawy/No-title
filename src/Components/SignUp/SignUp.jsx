@@ -43,7 +43,7 @@ function SignUp() {
               <input className="p-2 bg-(--heroBtn-bg) text-(--textcolor-secound) outline-0 h-[45px] border border-(--heroBtn-bg) focus:border-(--color-main) mb-5 " type="password" name="" id="password" placeholder="Enter your Password" />
             </div>
             
-            <div className="flex gap-1 items-center">
+            <div className="flex gap-2 items-center">
               <span 
                 className="border border-(--border) rounded-[3px] w-10 h-6 flex justify-center items-center text-center cursor-pointer"
                 onClick={() => setIsChecked(!isChecked)}
@@ -62,7 +62,7 @@ function SignUp() {
                 onChange={(e) => setIsChecked(e.target.checked)}
                 className="hidden"
               />
-              <p className="text-[14px] text-(--textcolor-secound) ml-2" onClick={() => setIsChecked(!isChecked)}>
+              <p className="text-[12px] md:text-[14px] lg:text-[14px] text-(--textcolor-secound) ml-2" onClick={() => setIsChecked(!isChecked)}>
                 By creating account means you agree to the 
                 <span className="text-(--color-main)"> Terms and Conditions</span>, and 
                 <span className="text-(--color-main)"> Privacy Policy</span>
