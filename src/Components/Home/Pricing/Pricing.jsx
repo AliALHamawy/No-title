@@ -13,7 +13,7 @@ function Pricing() {
 
   return (
     <>
-      <div className="pricing pt-30 pb-5 px-4">
+      <div className="pricing pt-30 pb-5 px-4 relative">
         <svg className='absolute left-0' width="239" height="601" viewBox="0 0 239 601" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect opacity="0.3" x="-184.451" y="600.973" width="196" height="541.607" rx="2" transform="rotate(-128.7 -184.451 600.973)" fill="url(#paint0_linear_93:235)"></rect>
           <rect opacity="0.3" x="-188.201" y="385.272" width="59.7544" height="541.607" rx="2" transform="rotate(-128.7 -188.201 385.272)" fill="url(#paint1_linear_93:235)"></rect>
@@ -48,7 +48,7 @@ function Pricing() {
           <div className="cards flex justify-center flex-wrap gap-10 my-10">
             {info.map((item) => (
               <div className="card w-[368px] flex flex-col bg-(--bg-secound) p-6 md:p-8 lg:p-8 relative" key={item.id}>
-                <svg className="absolute translate-y-[323px] translate-x-[154px] md:translate-y-[330px] md:translate-x-[154px] lg:translate-y-[330px] lg:translate-x-[154px]" width="179" height="158" viewBox="0 0 179 158" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className="absolute bottom-0 right-0" width="179" height="158" viewBox="0 0 179 158" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path opacity="0.5" d="M75.0002 63.256C115.229 82.3657 136.011 137.496 141.374 162.673C150.063 203.47 207.217 197.755 202.419 167.738C195.393 123.781 137.273 90.3579 75.0002 63.256Z" fill="url(#paint0_linear_70:153)"></path>
                   <path opacity="0.3" d="M178.255 0.150879C129.388 56.5969 134.648 155.224 143.387 197.482C157.547 265.958 65.9705 295.709 53.1024 246.401C34.2588 174.197 100.939 83.7223 178.255 0.150879Z" fill="url(#paint1_linear_70:153)"></path>
                   <defs>

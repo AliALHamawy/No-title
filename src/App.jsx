@@ -38,11 +38,6 @@ function App() {
               <><BlogDetails /></>
             }
           />
-          <Route path='/BlogDetails'
-            element={
-              <><BlogDetails /></>
-            }
-          />
           <Route path='/SignUp'
             element={
               <><SignUp /></>
