@@ -7,7 +7,7 @@ function Blogs() {
   const [blog, setBlog] = useState(BlogsInf)
   return (
     <>
-      <div className="blogs bg-(--bg-secound) p-10">
+      <div className="blogs bg-(--bg-secound) py-10 ">
         <div className="cont px-4 my-20">
           <div className="top max-w-[570px]  m-auto text-center">
             <h1 className='text-(--textcolor-main) text-3xl sm:text-5xl bd:text-5xl lg:text-5xl font-bold mb-7 leading-10 sm:leading-16 md:leading-16 lg:leading-16'>Our Latest Blogs</h1>
@@ -22,7 +22,7 @@ function Blogs() {
                   <p className='text-[16px] text-(--textcolor-secound) my-4 pb-4 border-b border-(--border)'>{item.subTitle}</p>
                   <div className='flex'>
                     <div className="left flex justify-center">
-                      <img src={item.avatar} alt="" className='mr-3'/>
+                      <img src={item.avatar} alt="" className='mr-3 w-[50px] h-[50px]'/>
                       <div>
                         <h1 className='text-[14px] text-(--textcolor-main)'>{item.name}</h1>
                         <p className='text-[12px] text-(--textcolor-secound)'>{item.jop}</p>
