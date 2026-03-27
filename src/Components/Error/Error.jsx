@@ -1,3 +1,4 @@
+import { Link } from 'react-router'
 import './Error.css'
 
 function Error() {
@@ -12,7 +13,7 @@ function Error() {
         <div className="flex m-auto flex-col text-center items-center align-middle mt-60">
           <h1 className="text-3xl text-(--textcolor-main) font-black">Sorry, the page can’t be found</h1>
           <p className="text-xl max-w-[500px] mt-1 text-(--textcolor-secound)">The page you were looking for appears to have been moved, deleted or does not exist.</p>
-          <button className='h-[50px] w-[230px] mb-20 rounded-2xl bg-(--color-main) text-xl text-(--textcolor-main) transition-all duration-300 hover:bg-(--hcolor-main) mt-5'>Back to Homepage</button>
+          <Link to="/" className='h-[50px] w-[230px] text-center align-middle items-center justify-center mb-20 rounded-2xl bg-(--color-main) text-xl text-(--textcolor-main) transition-all duration-300 hover:bg-(--hcolor-main) mt-5 py-3'>Back to Homepage</Link>
             
         </div>
         </div>
