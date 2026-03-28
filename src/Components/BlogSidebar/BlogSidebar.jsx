@@ -29,7 +29,7 @@ function BlogSidebar() {
                   <div className="flex text-xl gap-2 items-center "><BiCommentDetail />50</div>
                   <div className="flex text-xl gap-2 items-center "><GrView />100</div>
                 </div>
-                <button to="/" className='h-[30px] w-[70px] text-center align-middle items-center justify-center rounded-2xl bg-(--color-main) text-(--textcolor-main) transition-all duration-300 hover:bg-(--hcolor-main) '>Design</button>
+                <button to="/" className='h-[30px] w-[70px] text-center align-middle items-center justify-center rounded-2xl bg-(--color-main) text-(--hero-btntext) transition-all duration-300 hover:bg-(--hcolor-main) '>Design</button>
 
               </div>
             </div>
