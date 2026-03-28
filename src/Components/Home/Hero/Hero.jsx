@@ -10,7 +10,7 @@ function Hero() {
           <h1 className='text-(--textcolor-main) text-3xl sm:text-5xl bd:text-5xl lg:text-5xl font-bold mb-7 leading-10 sm:leading-16 md:leading-16 lg:leading-16'>Free and Open-Source Next.js Template for Startup & SaaS</h1>
           <p className='text-xl text-(--textcolor-secound) mb-10'>Startup is free Next.js template for startups and SaaS business websites comes with all the essential pages, components,
             and sections you need to launch a complete business website, built-with Next 13.x and Tailwind CSS.</p>
-            <button className='bg-(--heroBtn-bg) hover:bg-(--heroBtn-hbg) transition duration-300 text-(--textcolor-main) h-[56px] w-[177px] m-auto'>Star on GitHub</button>
+            <button className='bg-(--heroBtn-bg) hover:bg-(--heroBtn-hbg) transition duration-300 text-(--hero-btntext) h-[56px] w-[177px] m-auto'>Star on GitHub</button>
         </div>
       </div>
     </>

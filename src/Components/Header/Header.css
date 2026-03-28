@@ -174,3 +174,8 @@ nav.header {
         display: flex !important;
     }
 }
+@media (max-width: 710px) {
+    .kkk {
+        display: none;
+    }
+}

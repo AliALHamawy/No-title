@@ -1,11 +1,13 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { About, Blog, BlogDetails, Blogs, BlogSidebar, Contact, Error, ExtraFeatures, Features, FeedBack, Footer, Header, Help, Hero, Pricing, SectionsInfo, SignIn, SignUp, Support, VeryExtraFeatures } from './import'
+import { About, Blog, BlogDetails, Blogs, BlogSidebar, Contact, Error, ExtraFeatures, Features, FeedBack, Footer, Header, Help, Hero, Pricing, SectionsInfo, SignIn, SignUp, ScrollUp, VeryExtraFeatures } from './import'
 
 function App() {
   return (
     <>
+    
       <BrowserRouter>
+      <ScrollUp />
         <Header />
         <Routes>
           <Route path='/'

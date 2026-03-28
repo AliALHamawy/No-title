@@ -1,35 +1,15 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 @import url('https://fonts.googleapis.com/css2?family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-/* :root {
-    --bg-main: #fff;
-    --bg-secound: #fff;
-    --color-main: rgb(74 108 247);
-    --textcolor-main: rgb(18 23 35);
-    --textcolor-secound: rgb(120 130 147);
-    --input-bg: #f8f8f8;
-    --card-bg: rgb(255 255 255);
-    --shadow: 0px 5px 10px var(--tw-shadow-color);
-}
 
-.dark {
-    --bg-main: rgb(30 35 46);
-    --bg-secound: rgb(18 23 35);
-    --color-main: rgb(74 108 247);
-    --textcolor-main: rgb(255 255 255);
-    --textcolor-secound: rgb(149 156 177);
-    --input-bg: rgb(44 48 59);
-    --card-bg: rgb(29 36 48);
-    --shadow: 0px 5px 10px var(--tw-shadow-color);
-} */
 :root {
     --bg-secound: rgb(23 28 40);
     --bg-main: rgb(18 23 35);
     --hbg-main: rgba(30, 35, 46, 0.479);
     --border: #5e5f619a;
     --color-main: rgb(74 108 247);
-    --hcolor-main:rgb(66, 104, 253);
-    ----color-asdsd:rgba(66, 103, 253, 0.212);
+    --hcolor-main: rgb(66, 104, 253);
+    --color-asdsd: rgba(66, 103, 253, 0.212);
     --textcolor-main: rgb(255 255 255);
     --textcolor-secound: rgb(149 156 177);
     --input-bg: rgb(44 48 59);
@@ -38,7 +18,33 @@
     --heroBtn-bg: rgb(53 57 67);
     --heroBtn-hbg: rgb(40, 42, 46);
     --input-bg: rgb(44 48 59);
+    --hero-btntext: #fff;
+    --priceIco: #1D2144;
+    --blogs-icons: var(--heroBtn-bg);
+    --footer-bg: var(--bg-main)
 }
+
+.light {
+    --bg-main: #f0f2f9;
+    --bg-secound: #fff;
+    --hbg-main: rgba(128, 128, 128, 0.267);
+    --border: #ffffff9a;
+    --color-main: rgb(74 108 247);
+    --hcolor-main: rgb(66, 104, 253);
+    --color-asdsd: rgba(66, 103, 253, 0.212);
+    --textcolor-main: #121723;
+    --textcolor-secound: #788293;
+    --card-bg: #f5f5f5;
+    --shadow: 0px 2px 6px rgba(160, 160, 160, 0.753);
+    --heroBtn-bg: #121723;
+    --heroBtn-hbg: rgb(40, 42, 46);
+    --input-bg: #f8f8f8;
+    --hero-btntext: #fff;
+    --blogs-icons: #f0f2f9;
+    --priceIco: #4a6cf71a;
+    --footer-bg: var(--bg-secound)
+}
+
 body {
     font-family: "Iosevka Charon", monospace;
     background-color: var(--bg-main);

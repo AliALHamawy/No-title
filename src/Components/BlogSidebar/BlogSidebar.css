@@ -3,3 +3,8 @@
         flex-direction: column;
     }
 }
+@media (min-width: 1001px) {
+    .blogsSidebar .cont .right{
+        width: 450px;
+    }
+}

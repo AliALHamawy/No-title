@@ -1,15 +1,30 @@
+
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { BiSun } from "react-icons/bi";
+import { useState, useEffect, useRef } from "react";
+import { BiMoon, BiSun } from "react-icons/bi";
 import { BiChevronDown } from "react-icons/bi";
 import './Header.css'
 import { Link } from 'react-router'
-import { useState, useRef } from "react";
 
 function Header() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false)
+  const [theme, setTheme] = useState("dark")
   const timeoutRef = useRef(null)
+
+  useEffect(() => {
+    if (theme === "light") {
+      document.body.classList.add("light")
+    }
+    else {
+      document.body.classList.remove("light")
+    }
+  }, [theme])
+
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light")
+  }
 
   const handleMouseEnter = () => {
     if (window.innerWidth > 1100) {
@@ -45,7 +60,7 @@ function Header() {
           <div className="left min-w-[164.47px] mr-10">
             <div className="logo">
               <Link to="/">
-              <img src="/assets/images/logo/logo.svg" alt="" />
+                <img src={theme==="dark"?"/assets/images/logo/logo.svg": "/assets/images/logo/logo-2.svg"} />
               </Link>
             </div>
           </div>
@@ -65,7 +80,7 @@ function Header() {
                   Pages <BiChevronDown />
                 </Link>
                 <ul
-                  className={`absolute top-0 translate-y-17.5 bg-(--bg-secound) flex flex-col gap-3 text-[17px] w-[260px] p-4 mobile-ul ${isDropdownOpen || isMobileDropdownOpen ? 'show' : 'hidden'}`} 
+                  className={`absolute top-0 translate-y-17.5 bg-(--bg-secound) flex flex-col gap-3 text-[17px] w-[260px] p-4 mobile-ul ${isDropdownOpen || isMobileDropdownOpen ? 'show' : 'hidden'}`}
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
                 >
@@ -80,9 +95,19 @@ function Header() {
                 </ul>
               </ul>
               <div className="buttons flex justify-between gap-10 items-center ">
-                <button className="text-(--textcolor-main)  transition duration-300 hover:text-(--textcolor-secound)">Sign In</button>
-                <button className="text-(--textcolor-main) bg-(--color-main) h-12 w-33  transition duration-300 hover:bg-(--hcolor-main)">Sign Up</button>
-                <BiSun className="active:text-(--textcolor-main)  transition duration-300 hover:text-(--textcolor-main) text-3xl" />
+                <Link to="/SignIn" className="kkk text-(--textcolor-main)  transition duration-300 hover:text-(--textcolor-secound)">Sign In</Link>
+                <Link to="/SignUp" className="kkk text-(--textcolor-main) bg-(--color-main) h-12 w-33  transition duration-300 hover:bg-(--hcolor-main) text-center items-center align-middle justify-center pt-3">Sign Up</Link>
+                {theme === "dark" ? (
+                  <BiSun
+                    onClick={toggleTheme}
+                    className="text-3xl cursor-pointer"
+                  />
+                ) : (
+                  <BiMoon
+                    onClick={toggleTheme}
+                    className="text-3xl cursor-pointer"
+                  />
+                )}
                 {!isMobileMenuOpen ? (
                   <AiOutlineMenu onClick={toggleMobileMenu} className="menu text-3xl cursor-pointer" />
 

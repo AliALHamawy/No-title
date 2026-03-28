@@ -17,4 +17,5 @@ export { default as SignUp } from './Components/SignUp/SignUp'
 export { default as SignIn } from './Components/SignIn/SignIn'
 export { default as Error } from './Components/Error/Error'
 export { default as SectionsInfo } from './Components/SectionsInfo/SectionsInfo'
+export { default as ScrollUp } from './Components/ScrollUp';
 export { default as Footer } from './Components/Footer/Footer'

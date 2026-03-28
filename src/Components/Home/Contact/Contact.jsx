@@ -3,8 +3,10 @@ import './Contact.css'
 function Contact() {
   return (
     <>
-      <div className="contact flex flex-wrap justify-center p-4 my-20 max-w-[1500px] m-auto gap-10">
-        <div className="py-10 left lg:w-[901.33px] min-h-[617px] flex flex-col bg-(--bg-secound)">
+    <div className="contact bg-(--bg-secound) pb-15">
+
+      <div className="contact flex flex-wrap justify-center p-4 max-w-[1500px] m-auto gap-10 ">
+        <div className="py-10 left lg:w-[901.33px] min-h-[617px] flex flex-col bg-(--card-bg)">
           <div className="cont flex flex-col w-[90%] m-auto justify-between">
 
           <div className='flex flex-col mb-10'>
@@ -28,7 +30,7 @@ function Contact() {
             <button className='h-[56px] w-[175.13px] bg-(--color-main) text-xl text-(--textcolor-main) transition-all duration-300 hover:bg-(--hcolor-main) mt-5'>Submit Ticket</button>
           </div>
         </div>
-        <div className="right w-[434.66px] min-h-[617px] bg-(--bg-secound) p-10 flex flex-col gap-4">
+        <div className="right w-[434.66px] min-h-[617px] bg-(--card-bg) p-10 flex flex-col gap-4 ">
           <div className="fex flex-col border-b border-(--border) pb-10 flex flex-col gap-4">
             <h1 className='text-2xl text-(--textcolor-main) font-bold'>Subscribe to receive future updates</h1>
             <p className='text-(--textcolor-secound)'>Lorem ipsum dolor sited Sed ullam corper consectur adipiscing Mae ornare massa quis lectus.</p>
@@ -39,6 +41,7 @@ function Contact() {
             <p className='text-center mt-3 text-(--textcolor-secound)'>No spam guaranteed, So please don’t send any spam mail.</p>
         </div>
       </div>
+    </div>
     </>
   )
 }
