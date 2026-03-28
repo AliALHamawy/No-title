@@ -1,4 +1,5 @@
-
+import { useContext } from "react";
+import { ThemeContext } from "../ThemeProvider";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { useState, useEffect, useRef } from "react";
 import { BiMoon, BiSun } from "react-icons/bi";
@@ -10,8 +11,10 @@ function Header() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false)
-  const [theme, setTheme] = useState("dark")
   const timeoutRef = useRef(null)
+  const { theme, toggleTheme } = useContext(ThemeContext);
+  // const [theme, setTheme] = useState("dark")
+
 
   useEffect(() => {
     if (theme === "light") {
@@ -22,9 +25,9 @@ function Header() {
     }
   }, [theme])
 
-  const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light")
-  }
+  // const toggleTheme = () => {
+  //   setTheme(theme === "light" ? "dark" : "light")
+  // }
 
   const handleMouseEnter = () => {
     if (window.innerWidth > 1100) {

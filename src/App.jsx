@@ -1,11 +1,12 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { About, Blog, BlogDetails, Blogs, BlogSidebar, Contact, Error, ExtraFeatures, Features, FeedBack, Footer, Header, Help, Hero, Pricing, SectionsInfo, SignIn, SignUp, ScrollUp, VeryExtraFeatures } from './import'
+import { About, Blog, BlogDetails, Blogs, BlogSidebar, Contact, Error, ExtraFeatures, Features, FeedBack, Footer, Header, Help, Hero, Pricing, SectionsInfo, SignIn, SignUp, ScrollUp, VeryExtraFeatures, ThemeProvider } from './import'
 
 function App() {
   return (
     <>
-    
+    <ThemeProvider>
+
       <BrowserRouter>
       <ScrollUp />
         <Header />
@@ -58,6 +59,7 @@ function App() {
         </Routes>
         <Footer />
       </BrowserRouter>
+    </ThemeProvider>
     </>
   )
 }

@@ -1,6 +1,9 @@
+import { useContext } from 'react';
+import { ThemeContext } from '../../ThemeProvider';
 import './ExtraFeatures.css'
 
 function ExtraFeatures() {
+  const { theme } = useContext(ThemeContext);
   return (
     <>
       <div className="extraFeatures max-w-[1400px] border-b border-(--border) flex flex-col lg:flex-row gap-10 justify-between items-center pb-5 m-auto px-2">
@@ -35,7 +38,7 @@ function ExtraFeatures() {
           </div>
         </div>
         <div className="Right">
-          <img src="/assets/images/about/about-image-dark.svg" alt="" className='w-[320px] md:min-w-[464px] lg:min-w-[464px]'/>
+          <img src={theme === "dark"?"/assets/images/about/about-image-dark.svg" :"/assets/images/about/about-image.svg" } alt="" className='w-[320px] md:min-w-[464px] lg:min-w-[464px]'/>
         </div>
       </div>
     </>

@@ -27,7 +27,7 @@ function Contact() {
               <label className='my-3 text-xl text-(--textcolor-main)' htmlFor="message">Your Message</label>
               <textarea placeholder='Enter Your Message' className='text-(--textcolor-secound) resize-none p-3 outline-0 transition-all duration-300 focus:border border-(--color-main) bg-(--input-bg) h-[146px]' type="text" name="" id="message" />
             </div>
-            <button className='h-[56px] w-[175.13px] bg-(--color-main) text-xl text-(--textcolor-main) transition-all duration-300 hover:bg-(--hcolor-main) mt-5'>Submit Ticket</button>
+            <button className='h-[56px] w-[175.13px] bg-(--color-main) text-xl text-(--hero-btntext) transition-all duration-300 hover:bg-(--hcolor-main) mt-5'>Submit Ticket</button>
           </div>
         </div>
         <div className="right w-[434.66px] min-h-[617px] bg-(--card-bg) p-10 flex flex-col gap-4 ">
@@ -37,7 +37,7 @@ function Contact() {
           </div>
           <input placeholder='Enter Your Name' className='text-(--textcolor-secound) mt-10 px-3 outline-0 transition-all duration-300 focus:border border-(--color-main) h-[50px] w-[100%] bg-(--input-bg)' type="text" name="" id="name" />
           <input placeholder='Enter Your Email' className='text-(--textcolor-secound) px-3 outline-0 transition-all duration-300 focus:border border-(--color-main) h-[50px] w-[100%] bg-(--input-bg)' type="text" name="" id="name" />
-            <button className='h-[56px] w-[100%] bg-(--color-main) text-xl text-(--textcolor-main) transition-all duration-300 hover:bg-(--hcolor-main) mt-5'>Submit Ticket</button>
+            <button className='h-[56px] w-[100%] bg-(--color-main) text-xl text-(--hero-btntext) transition-all duration-300 hover:bg-(--hcolor-main) mt-5'>Submit Ticket</button>
             <p className='text-center mt-3 text-(--textcolor-secound)'>No spam guaranteed, So please don’t send any spam mail.</p>
         </div>
       </div>

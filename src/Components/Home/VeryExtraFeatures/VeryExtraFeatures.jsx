@@ -1,10 +1,13 @@
 import './VeryExtraFeatures.css'
+import { useContext } from 'react';
+import { ThemeContext } from '../../ThemeProvider';
 
 function VeryExtraFeatures() {
+  const { theme } = useContext(ThemeContext);
     return (
         <div className="veryExtraFeatures max-w-[1400px]  flex flex-col lg:flex-row gap-10 justify-between items-center py-10 m-auto px-2">
             <div className="left max-w-[600px] ">
-                <img src="/assets/images/about/about-image-2-dark.svg" alt="" className='w-[320px] md:min-w-[464px] lg:min-w-[464px]' />
+                <img src={theme=== 'dark'?"/assets/images/about/about-image-2-dark.svg":"/assets/images/about/about-image-2.svg"} alt="" className='w-[320px] md:min-w-[464px] lg:min-w-[464px]' />
 
             </div>
             <div className="Right max-w-[550px] flex flex-col text-left m-auto gap-5">
